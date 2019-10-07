@@ -30,3 +30,9 @@ function password(l,characters){
 }
 
 //function to copy
+function myFunction(){
+    var copyText = document.getElementById("yourPw");
+    copyText.select();
+    document.execCommand("copy");
+    alert("Copied Password: " + copyText.value);
+}
