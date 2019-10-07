@@ -37,6 +37,7 @@
 .box{
     margin: 20px auto;
     border: 5px dashed #c0c0c0;
+    width: 90%;
     height: 200px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -66,6 +67,16 @@
     color: white;
     border-radius: 30px;
 }
+.buttonGen:hover{
+    background-color: #b42b03;
+    color: white;
+    border-radius: 30px;
+}
+.buttonGen:active{
+    background-color: #0000ff;
+    color: white;
+    border-radius: 30px;
+}
 
 
 #genBtn {
@@ -80,6 +91,17 @@
     border-radius: 30px;
 }
 
+
+.buttonCpy:hover{
+    background-color: #061895;
+    color: white;
+    border-radius: 30px;
+}
+.buttonCpy:active{
+    background-color: #0080c0;
+    color: white;
+    border-radius: 30px;
+}
 
 #copyGen {
     position: absolute;

@@ -1,20 +1,24 @@
-//variables
-var genBtn = document.getElementById("genBtn")
-var genBox = document.getElementById("genBox");
-var passLength = document.getElementById("passLength");
-var numYN = document.getElementById("num");
-var specYN = document.getElementById("spec");
+var char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var num = '0123456789';
+var sym = '!@#$%^&*=-_';
 
-var alphaChar = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var numChar = '0123456789';
-var specChar = '!@#$%^&*';
+var charNum = document.getElementById("charNum");
+var numBox = document.getElementById("num");
+var symBox = document.getElementById("sym");
+var submit = document.getElementById("submit");
+var yourPw = document.getElementById("yourPw");
 
+submit.addEventListener("click",function(e){
+    var characters = char;
+    (numBox.checked) ? characters += num : '';
+    (symBox.checked) ? characters += sym : '';
+    yourPw.value = password(charNum.value, characters);
+});
 
-//Func to generate random password
-
-// Func to Copy Password
-function copyGen(){
-    document.getElementById("genBox").querySelector();
-    document.execCommand("Copy");
-    alert("Your randomly generated password has been copied to your clipboard")
+function password(l,characters){
+		var pwd = '';
+    for(var i = 0; i<l; i++){
+    		pwd += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return pwd;
 }

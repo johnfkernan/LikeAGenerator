@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+
     <title>John Kernan: Password Generator</title>
 </head>
 <!-- Adding Body Elements and Main Background color via talkingBody class -->
@@ -21,17 +22,13 @@
         <h2 class="head2">Generate a Password</h2>
         
         <!-- Generator Box where the Password will Generate -->
-        <div id="genBox" class="box">Your Secure Password</div>
-
-        <!-- Assignment has a bottom border after the box so i added a div to account for that -->
-        <div class="boxBTMborder"></div>
-        
-        <!-- Generate Button -->
-        <button id="genBtn" class="button buttonGen">Generate Password</button>
-        <!-- Copy Button -->
-        <button id="copyGen" class="button buttonCpy">Copy to Clipboard</button>
+        Your Password: <input type="textbox" class="genBox" id="yourPw"/>
+        How many characters? <input type="number" id="charNum" value="12" min="8" max="100" /><br />
+        Number: <input type="checkbox" id="num"/>
+        Symbol: <input type="checkbox" id="sym"/><br />
+        <button id="submit">Submit</button><br />
     </div>
-
+    <script src="app.js"></script>
     
 </body>
 </html>
