@@ -38,7 +38,7 @@
     margin: 20px auto;
     border: 5px dashed #c0c0c0;
     width: 90%;
-    height: 200px;
+    height: 150px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
@@ -46,9 +46,9 @@
     border-radius: 8px;
 }
 
-.boxBTMborder{
+.boxTOPborder{
     border-top: 3px solid #c0c0c0; 
-    padding-bottom: 50px;
+    padding-bottom: 5px;
 }
 
 .button{
